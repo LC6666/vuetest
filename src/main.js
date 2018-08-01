@@ -11,6 +11,9 @@ import MyRouter from "./components/MyRouter.vue"
 import MyRouterSendMsg from "./components/MyRouterSendMsg.vue"
 import MyRouterGetMsg from "./components/MyRouterGetMsg.vue"
 import MyRouterGetMsgTail from "./components/MyRouterGetMsgTail.vue"
+import MyRouteRequest from "./components/MyRouteRequest.vue"
+import MyRouteRequestDetail from "./components/MyRouterRequestDetail.vue"
+import MyRouteRequestDetail2 from "./components/MyRouterRequestDetail2.vue"
 
 Vue.config.productionTip = false
 
@@ -27,10 +30,13 @@ Vue.use(VueRouter)
 
 // 2、定义路由  （建议复制）
 const routes = [
-  { path: '/myrouter', component: MyRouter },
-  { path: '/myroutersendmsg', component: MyRouterSendMsg },
+  {path: '/myrouter', component: MyRouter },
+  {path: '/myroutersendmsg', component: MyRouterSendMsg },
   {path:"/myroutergetmsg",component:MyRouterGetMsg},
   {path:"/myroutergetmsgtail/:id",component:MyRouterGetMsgTail},//动态路由
+  {path:"/myrouterequest",component:MyRouteRequest},
+  {path:"/myrouterequestdetail",component:MyRouteRequestDetail},
+  {path:"/myrouterequestdetail2/:aid",component:MyRouteRequestDetail2},
   // { path: '*', redirect: '/' }   /*默认跳转路由*/
 ]
 

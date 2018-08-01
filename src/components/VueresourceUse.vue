@@ -13,8 +13,6 @@
       4、在组件里面直接使用<br>
       this.$http.get(地址).then(function(){
       })
-
-
     </div>
     <button @click="getData()">点我，获取数据</button>
     <ul>

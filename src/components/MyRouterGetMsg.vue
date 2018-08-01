@@ -1,7 +1,7 @@
 <template>
   <div>
     <hr/>
-    MyRouterGetMsg
+    使用this.$route.query获取get传值{{id}}
   </div>
 
 </template>
@@ -9,8 +9,14 @@
 <script>
     export default {
       name: "MyRouterGetMsg",
+      data(){
+        return{
+          id:"",
+        }
+      },
       mounted(){
-        console.log(this.$route.query);
+        // console.log(this.$route.query);
+        this.id = this.$route.query.id;
       },
     }
 </script>

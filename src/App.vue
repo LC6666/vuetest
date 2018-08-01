@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <router-link to="/myrouter">vue路由配置</router-link>
-    <router-link to="/myroutersendmsg">vue路由配置 Get传值</router-link>
-    <router-view></router-view>
     <v-compon></v-compon>
+    <router-view></router-view>
 
   </div>
 

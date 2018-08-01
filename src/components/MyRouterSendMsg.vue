@@ -19,7 +19,6 @@
           <router-link :to="'/myroutergetmsgtail/'+p.id">动态路由传值{{p.name}}</router-link>
         </li>
       </ul>
-      <router-view></router-view>
 
 
 

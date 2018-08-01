@@ -1,7 +1,10 @@
 <template>
     <div id="bottomNav">
-      <router-link to="/" class="tab">功能测试</router-link>
-      <router-link to="/interface" class="tab">接口测试</router-link>
+      <!--<router-link to="/" class="tab">功能测试</router-link>-->
+      <!--<router-link to="/interface" class="tab">接口测试</router-link>-->
+      <router-link to="/myrouter" class="tab">vue路由配置</router-link>
+      <router-link to="/myroutersendmsg" class="tab">vue路由配置 Get传值</router-link>
+      <router-link to="/myrouterequest" class="tab">路由结合请求数据</router-link>
     </div>
 </template>
 
