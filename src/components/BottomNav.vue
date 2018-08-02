@@ -5,12 +5,18 @@
       <router-link to="/myrouter" class="tab">vue路由配置</router-link>
       <router-link to="/myroutersendmsg" class="tab">vue路由配置 Get传值</router-link>
       <router-link to="/myrouterequest" class="tab">路由结合请求数据</router-link>
+      <div class="tab"><button @click="go()">Vue路由编程式导航以及hash模式</button></div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "BottomNav"
+      name: "BottomNav",
+      methods:{
+        go(){
+          this.$router.push({ path: 'myrouteprogram'});
+        },
+      },
     }
 </script>
 

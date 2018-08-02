@@ -14,6 +14,7 @@ import MyRouterGetMsgTail from "./components/MyRouterGetMsgTail.vue"
 import MyRouteRequest from "./components/MyRouteRequest.vue"
 import MyRouteRequestDetail from "./components/MyRouterRequestDetail.vue"
 import MyRouteRequestDetail2 from "./components/MyRouterRequestDetail2.vue"
+import MyRouteProgram from "./components/MyRouteProgram"
 
 Vue.config.productionTip = false
 
@@ -35,8 +36,9 @@ const routes = [
   {path:"/myroutergetmsg",component:MyRouterGetMsg},
   {path:"/myroutergetmsgtail/:id",component:MyRouterGetMsgTail},//动态路由
   {path:"/myrouterequest",component:MyRouteRequest},
-  {path:"/myrouterequestdetail",component:MyRouteRequestDetail},
-  {path:"/myrouterequestdetail2/:aid",component:MyRouteRequestDetail2},
+  {path:"/myrouterequestdetail",component:MyRouteRequestDetail,name:"myrouterequestdetail"},
+  {path:"/myrouterequestdetail2/:aid",component:MyRouteRequestDetail2,name:"myrouterequestdetail2"},
+  {path:"/myrouteprogram",component:MyRouteProgram},
   // { path: '*', redirect: '/' }   /*默认跳转路由*/
 ]
 
