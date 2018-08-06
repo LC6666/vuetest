@@ -15,6 +15,9 @@ import MyRouteRequest from "./components/MyRouteRequest.vue"
 import MyRouteRequestDetail from "./components/MyRouterRequestDetail.vue"
 import MyRouteRequestDetail2 from "./components/MyRouterRequestDetail2.vue"
 import MyRouteProgram from "./components/MyRouteProgram"
+import FrameDemo from "./components/FrameDemo"
+import FrameRight1 from "./components/FrameRight1"
+import FrameRight2 from "./components/FrameRight2"
 
 Vue.config.productionTip = false
 
@@ -39,6 +42,7 @@ const routes = [
   {path:"/myrouterequestdetail",component:MyRouteRequestDetail,name:"myrouterequestdetail"},
   {path:"/myrouterequestdetail2/:aid",component:MyRouteRequestDetail2,name:"myrouterequestdetail2"},
   {path:"/myrouteprogram",component:MyRouteProgram},
+  {path:"/framedemo",component:FrameDemo,children:[{path:"frame1",component:FrameRight1},{path:"frame2",component:FrameRight2}]},
   // { path: '*', redirect: '/' }   /*默认跳转路由*/
 ]
 

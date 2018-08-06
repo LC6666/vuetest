@@ -6,6 +6,7 @@
       <router-link to="/myroutersendmsg" class="tab">vue路由配置 Get传值</router-link>
       <router-link to="/myrouterequest" class="tab">路由结合请求数据</router-link>
       <div class="tab"><button @click="go()">Vue路由编程式导航以及hash模式</button></div>
+      <div class="tab"><span @click="go1()"  >路由的嵌套</span></div>
     </div>
 </template>
 
@@ -14,7 +15,10 @@
       name: "BottomNav",
       methods:{
         go(){
-          this.$router.push({ path: 'myrouteprogram'});
+          this.$router.push({path:'myrouteprogram'});
+        },
+        go1(){
+          this.$router.push({path:"/framedemo"});
         },
       },
     }
