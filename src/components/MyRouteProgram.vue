@@ -3,6 +3,7 @@
       <hr/>
       <div><b>20 Vue路由编程式导航以及hash模式</b></div>
       <div>
+        路由编程式导航
         <div>第一种跳转方式</div>
         get传值获取
         <div>this.$router.push({path:"myrouterequestdetail?aid="+aid})</div>
@@ -14,6 +15,20 @@
         <div>this.$router.push({name:"myrouterequestdetail",query:{aid:aid}})</div>
         路由动态传值获取
         <div>this.$router.push({name:"myrouterequestdetail2",params:{aid:aid}})</div>
+      </div>
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      <div>
+        HTML5 History 模式
+        <div>vue-router 默认 hash 模式 —— 使用 URL 的 hash 来模拟一个完整的 URL，于是当 URL 改变时，页面不会重新加载。</div>
+        <div>
+          如果不想要很丑的 hash，我们可以用路由的 history 模式，这种模式充分利用 history.pushState API 来完成 URL 跳转而无须重新加载页面。
+        </div>
+        <div>
+          const router = new VueRouter({ <br>
+          mode: 'history', <br>
+          routes: [...] <br>
+          })
+        </div>
       </div>
 
       <table>

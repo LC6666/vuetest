@@ -31,8 +31,8 @@ Vue.use(VueRouter)
 
 // 2、定义路由  （建议复制）
 const routes = [
-  {path: '/myrouter', component: MyRouter },
-  {path: '/myroutersendmsg', component: MyRouterSendMsg },
+  {path: "/myrouter", component: MyRouter },
+  {path: "/myroutersendmsg", component: MyRouterSendMsg },
   {path:"/myroutergetmsg",component:MyRouterGetMsg},
   {path:"/myroutergetmsgtail/:id",component:MyRouterGetMsgTail},//动态路由
   {path:"/myrouterequest",component:MyRouteRequest},
@@ -45,7 +45,10 @@ const routes = [
 
 //3.实例化VueRouter  注意：名字
 const router = new VueRouter({
-  routes // （缩写）相当于 routes: routes
+  // History 模式
+  mode: 'history',
+  // （缩写）相当于 routes: routes
+  routes
 })
 
 //4、挂载路由
