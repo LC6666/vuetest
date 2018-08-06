@@ -13,6 +13,7 @@
       <v-life></v-life>
       <v-vueuse></v-vueuse>
       <v-axios></v-axios>
+      <v-interface></v-interface>
       <button @click="fatherfun()">点我获取子组件的方法</button>
       <v-byval :msg="msg" :fun="run" ref="byval"></v-byval>
       <v-byvalboth></v-byvalboth>
@@ -32,6 +33,7 @@
   import AxiosUse from "./AxiosUse"
   import ByVal from "./ByVal"
   import ByValBoth from "./ByValBoth"
+  import Interface from "./interface"
 
 
     export default {
@@ -52,6 +54,7 @@
         "v-axios":AxiosUse,
         "v-byval":ByVal,
         "v-byvalboth":ByValBoth,
+        "v-interface":Interface,
       },
       methods:{
         run(data){
