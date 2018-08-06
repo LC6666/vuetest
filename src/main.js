@@ -2,12 +2,12 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-// import router from './router'
+import router from './router'
 import VueResource from 'vue-resource'
-import VueRouter from "vue-router"
+// import VueRouter from "vue-router"
 
 //1、创建组件 引入组件
-import MyRouter from "./components/MyRouter.vue"
+/*import MyRouter from "./components/MyRouter.vue"
 import MyRouterSendMsg from "./components/MyRouterSendMsg.vue"
 import MyRouterGetMsg from "./components/MyRouterGetMsg.vue"
 import MyRouterGetMsgTail from "./components/MyRouterGetMsgTail.vue"
@@ -17,23 +17,23 @@ import MyRouteRequestDetail2 from "./components/MyRouterRequestDetail2.vue"
 import MyRouteProgram from "./components/MyRouteProgram"
 import FrameDemo from "./components/FrameDemo"
 import FrameRight1 from "./components/FrameRight1"
-import FrameRight2 from "./components/FrameRight2"
+import FrameRight2 from "./components/FrameRight2"*/
 
 Vue.config.productionTip = false
 
 Vue.use(VueResource)
-Vue.use(VueRouter)
+// Vue.use(VueRouter)
 
 /* eslint-disable no-new */
-/*new Vue({
+new Vue({
   el: '#app',
   router,
   components: { App },
   template: '<App/>'
-})*/
+})
 
 // 2、定义路由  （建议复制）
-const routes = [
+/*const routes = [
   {path: "/myrouter", component: MyRouter },
   {path: "/myroutersendmsg", component: MyRouterSendMsg },
   {path:"/myroutergetmsg",component:MyRouterGetMsg},
@@ -43,23 +43,23 @@ const routes = [
   {path:"/myrouterequestdetail2/:aid",component:MyRouteRequestDetail2,name:"myrouterequestdetail2"},
   {path:"/myrouteprogram",component:MyRouteProgram},
   {path:"/framedemo",component:FrameDemo,children:[{path:"frame1",component:FrameRight1},{path:"frame2",component:FrameRight2}]},
-  // { path: '*', redirect: '/' }   /*默认跳转路由*/
-]
+  // { path: '*', redirect: '/' }   /!*默认跳转路由*!/
+]*/
 
 
 //3.实例化VueRouter  注意：名字
-const router = new VueRouter({
-  // History 模式
-  mode: 'history',
-  // （缩写）相当于 routes: routes
-  routes
-})
+// const router = new VueRouter({
+//   // History 模式
+//   mode: 'history',
+//   // （缩写）相当于 routes: routes
+//   routes
+// })
 
 //4、挂载路由
-new Vue({
-  el: '#app',
-  router,
-  render: h => h(App)
-})
+// new Vue({
+//   el: '#app',
+//   router,
+//   render: h => h(App)
+// })
 
 // 5 <router-view></router-view> 放在 App.vue
