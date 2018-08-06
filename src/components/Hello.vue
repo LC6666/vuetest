@@ -45,7 +45,7 @@
             person:{"name":"David","sex":"male","age":"20"},
             personlist:[{"name":"David","sex":"male","age":"20"},{"name":"Sasa","sex":"famale","age":"18"},{"name":"Momo","sex":"famale","age":"21"}],
             title:"我是title",
-            picname:"interface.jpg",
+            picname:"web.jpg",
             varh1:"<h4>hello</h4>",
             flag:true,
             vbgcolor:"grey",
